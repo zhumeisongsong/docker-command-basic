@@ -15,7 +15,10 @@
 
 ````docker rm $(docker ps -a -q)````  // Delete all
 
-````docker run -p outer-port:inner-port -d --name name publish-repository````
+````docker build .````  // Build it by DockerFile
+
+````docker run -p outer-port:inner-port -d --name name publish-repository````  // Run it
+
 e.g.: ````docker run -p 80:2368 -d --name some-ghost ghost````
 
 ## image
@@ -27,11 +30,6 @@ e.g.: ````docker run -p 80:2368 -d --name some-ghost ghost````
 ## publish the image 
 
 ````docker push [username/repository:tag]````
-
-## DockerFile
-
-````docker build .````
-
 
 ## sh file
 
