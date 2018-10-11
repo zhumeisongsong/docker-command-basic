@@ -1,15 +1,13 @@
 FROM node:9.10.0
 
-RUN cd /var && mkdir ts && cd ts
+EXPOSE 8080
 
-ADD ./package.json .
+ADD ./ .
 
 RUN npm install
 
-ADD ./
+#RUN npm rebuild node-sass --force
 
-CMD npm run dev
+CMD npm start
 
 #RUN npm run build
-
-#RUN cd assets/build/javascript && ls
