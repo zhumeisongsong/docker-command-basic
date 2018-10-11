@@ -1,4 +1,4 @@
-# perpose
+# purpose
 
 ■ How docker works
 
@@ -33,7 +33,17 @@ e.g.: ````docker run -p 80:2368 -d --name some-ghost ghost````
 
 ## sh file
 
+Dockerfile.build
 
+Dockerfile.copy
+
+build.sh
+
+docker build -t go/helloworld:build . -f Dockerfile.build
+
+
+
+## reference 
 
 https://yeasy.gitbooks.io/docker_practice/introduction/what.html
 
