@@ -4,7 +4,7 @@
 
 ■ How to make dockerFile
 
-■ How run a container 
+■ How to run a container 
 
 
 # command useful
